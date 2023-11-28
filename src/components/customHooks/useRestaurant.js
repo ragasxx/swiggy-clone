@@ -1,7 +1,7 @@
 import { SWIGGY_API, SWIGGY_MAPI } from "../../utils/constant";
 import { useState, useEffect } from "react";
 
-const userRestaurant = () => {
+const useRestaurant = () => {
   const [resList, setResList] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const userRestaurant = () => {
   return { resList };
 };
 
-export default userRestaurant;
+export default useRestaurant;

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import ShimmerUI from "./ShimmerUI";
-import userRestaurant from "./customHooks/userRestaurant";
+import useRestaurant from "./customHooks/useRestaurant";
 
 const Restaurants = () => {
-  const { resList } = userRestaurant();
+  const { resList } = useRestaurant();
 
   return resList.length === 0 ? (
     <ShimmerUI />

@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 
-import useOnline from "../utils/useOnline";
 import logo from "../assets/logo.svg";
 
 const Title = () => {
-  const isOnline = useOnline();
-
   return (
     <div className="w-full h-[80px] sticky shadow-md flex justify-center top-0 bg-white z-10">
       <div className="flex flex-wrap  justify-between w-10/12 items-center relative text-[#3d4152] font-medium">
